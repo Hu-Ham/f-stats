@@ -1,1 +1,57 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F-stats 1.0</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body onload="load()">
+    <div id="myform">
+    <h1> F-Statistics Calculator v. 1.0 </h1>
+    <table>
+        <tr>
+            <td></td>
+            <td>AA:</td>
+            <td>Aa:</td>
+            <td>aa:</td>
+        </tr>
+        <tr>
+            <td>Sub-population: </td>
+            <td><input type="number" id="AA"></td>
+            <td><input type="number" id="Aa"></td>
+            <td><input type="number" id="aa"></td>
+        </tr>
+
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td><input type="button" style="float:right" id="add" value="Add" 
+            onclick="Javascript:addRow()"></td>
+        </tr>
+    </table>
+    </div>
+
+    <div id="mydata">
+        <b>Observations:</b>
+        <table id="myTableData"  border="1" cellpadding="2">
+            <tr>
+                <td>&nbsp;</td>
+                <td><b>AA</b></td>
+                <td><b>Aa</b></td>
+                <td><b>aa</b></td>
+                <td><b>N</b></td>
+            </tr>
+        </table>
+        &nbsp; 
+         
+        </div>
+
+        <div id="myDynamicTable">
+        <input type="button" id="create" value="Click here" onclick="Javascript:addTable()">
+        </div>
+</body>
+</html>

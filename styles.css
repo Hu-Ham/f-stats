@@ -2,7 +2,7 @@ table{
     width:fit-content;
 }
 
-#valueTable {
+valueTable {
 border-collapse: collapse;
 width: 70%;  
 }
@@ -42,7 +42,7 @@ th {
     background-color: #D56E4B;
 }
 
-#title {
+#titleDiv {
     margin-top: 25px;
     margin-bottom: 10px;
     font-weight: bold;

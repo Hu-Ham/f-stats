@@ -1,0 +1,32 @@
+font-family: 'Times New Roman', Times, serif;
+
+#valueTable {
+border-collapse: collapse;
+width: 70%;  
+}
+
+#valueTable 
+    td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    }
+
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
+
+th, h1 {
+    border: 1px solid #ddd;
+    padding: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: left;
+    background-color: #C0B352;
+    color: #000000;
+}
+
+
+
+#valueTable
+th {
+    background-color: #D56E4B;
+}

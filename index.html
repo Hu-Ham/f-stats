@@ -1,6 +1,10 @@
+<! F-Statistics for population structure Calculator, first version: 
+Developed by Hugh O'Connell Hamilton and Deepak Muthyala, Summer 2021
+>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,45 +13,53 @@
     <script src="script.js" defer></script>
 </head>
 <body onload="load()">
-    <div id="myform">
-    <h1> F-Statistics Calculator v. 1.0 </h1>
+
+    <h1> Heterozygosity F-Statistics Calculator </h1> 
+    <b>Hugh O'Connell Hamilton and Deepak Muthyala, 2021 </b>
+    <p></p>
+    
     <table>
-        <tr>
-            <td></td>
-            <td>AA:</td>
-            <td>Aa:</td>
-            <td>aa:</td>
-        </tr>
-        <tr>
-            <td>Sub-population: </td>
-            <td><input type="number" id="AA"></td>
-            <td><input type="number" id="Aa"></td>
-            <td><input type="number" id="aa"></td>
-        </tr>
+    <tr>
+        <th></th>
+        <th>AA:</th>
+        <th>Aa:</th>
+        <th>aa:</th>
+    </tr>
+    <tr>´
+        <td>Sub-population: </td>
+        <td><input type="number" id="AA"></td>
+        <td><input type="number" id="Aa"></td>
+        <td><input type="number" id="aa"></td>
+    </tr>
 
         <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td><input type="button" style="float:right" id="add" value="Add" 
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td><input type="button" style="float:right" id="add" value="Add" 
             onclick="Javascript:addRow()"></td>
-        </tr>
+    </tr>
     </table>
     </div>
 
     <div id="mydata">
-        <b>Observations:</b>
-        <table id="myTableData"  border="1" cellpadding="2">
-            <tr>
-                <td><b>AA</b></td>
-                <td><b>Aa</b></td>
-                <td><b>aa</b></td>
-                <td><b>N</b></td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
-        &nbsp; 
+    <b>Observations:</b>
+    
+    <table id="valueTable" >
+        <tr>
+            <th><b>Population:</b></th>
+            <th><b>AA</b></th>
+            <th><b>Aa</b></th>
+            <th><b>aa</b></th>
+            <th><b>N</b></th>
+            <th><b>#A</b></th>
+            <th><b>#a</b></th>
+            <th>&nbsp;</th>
+        </tr>
+    </table>
+    &nbsp; 
          
-        </div>
+    
+
 </body>
 </html>

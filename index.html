@@ -13,52 +13,46 @@ Developed by Hugh O'Connell Hamilton and Deepak Muthyala, Summer 2021
     <script src="script.js" defer></script>
 </head>
 <body onload="load()">
-
+    <h4>Hugh O'Connell Hamilton & Deepak Muthyala, 2021 </h4>
     <h1> Heterozygosity F-Statistics Calculator </h1> 
-    <b>Hugh O'Connell Hamilton and Deepak Muthyala, 2021 </b>
-    <p></p>
-    
-    <table>
+    <div id="title">
+        Enter observations:</div>
+    <table id="inputTable">
     <tr>
-        <th></th>
-        <th>AA:</th>
-        <th>Aa:</th>
-        <th>aa:</th>
+        <th scope="col">Genotype:</th>
+        <th scope="col">AA:</th>
+        <th scope="col">Aa:</th>
+        <th scope="col">aa:</th>
+        <th scope="col"></th>
+
     </tr>
-    <tr>´
-        <td>Sub-population: </td>
+    <tr>
+        <td>Number: </td>
         <td><input type="number" id="AA"></td>
         <td><input type="number" id="Aa"></td>
         <td><input type="number" id="aa"></td>
-    </tr>
 
-        <tr>
-        <td> </td>
-        <td> </td>
-        <td> </td>
         <td><input type="button" style="float:right" id="add" value="Add" 
             onclick="Javascript:addRow()"></td>
     </tr>
-    </table>
-    </div>
 
-    <div id="mydata">
-    <b>Observations:</b>
+    </table>
     
+    <div id="title">
+    Fixation Indices:</div>
     <table id="valueTable" >
         <tr>
-            <th><b>Population:</b></th>
-            <th><b>AA</b></th>
-            <th><b>Aa</b></th>
-            <th><b>aa</b></th>
-            <th><b>N</b></th>
-            <th><b>#A</b></th>
-            <th><b>#a</b></th>
-            <th>&nbsp;</th>
+            <th scope="col"><strong>Population:</strong></th>
+            <th scope="col"><strong>AA</strong></th>
+            <th scope="col"><strong>Aa</strong></th>
+            <th scope="col"><strong>aa</strong></th>
+            <th scope="col"><strong>N</strong></th>
+            <th scope="col"><strong>#A</strong></th>
+            <th scope="col"><strong>#a</strong></th>
+            <th scope="col">&nbsp;</th>
         </tr>
     </table>
     &nbsp; 
-         
     
 
 </body>

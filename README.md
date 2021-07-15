@@ -1,2 +1,2 @@
 # Hu-Ham.github.io/f-stats/
-This is an education and graphics  tool project to calculate the three core F-statistics, FST,FIS and FIT. These statistics work by measuring degree of homozygosity by descent as a mean sof estimating population distance and inbreeding. 
+This is an education and graphics  tool project to calculate the three core F-statistics, FST,FIS and FIT. These statistics work by measuring degree of homozygosity by descent as a mean sof estimating population distance and inbreeding. FIS represents individual differential allele frequences across sub population, FIT represents the same but across the total population. FST is a measure of the differential alleic variation in subpopulation from total population. 
